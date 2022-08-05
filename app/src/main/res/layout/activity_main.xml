@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/menu_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_ball"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_main_example_dice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_white"
+        android:src="@drawable/ic_dice_1"
+        android:layout_gravity="end"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:tag="1"
+        android:id="@+id/iv_main_selected_dice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_white"
+        android:src="@drawable/ic_dice_1"
+        android:layout_gravity="center"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:id="@+id/layout_main_stop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_triangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>
